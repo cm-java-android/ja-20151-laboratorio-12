@@ -8,9 +8,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.java.android.laboratorio12.PrincipalActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/dica_urlEditText" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urlEditText"
+        android:layout_below="@+id/urlEditText"
+        android:layout_marginTop="22dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/workerThreadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_workerButton" />
+
+        <Button
+            android:id="@+id/asyncTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laben_asyncTaskButton" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_launcher" />
 
 </RelativeLayout>

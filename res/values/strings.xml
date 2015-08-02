@@ -4,5 +4,8 @@
     <string name="app_name">Laboratorio12-Worker</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="dica_urlEditText">Insira a URL da imagem</string>
+    <string name="label_workerButton">Worker Thread</string>
+    <string name="laben_asyncTaskButton">AsyncTask</string>
 
 </resources>
